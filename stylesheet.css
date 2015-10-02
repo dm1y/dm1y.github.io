@@ -3,7 +3,7 @@
 
 
 body {
-    background: linear-gradient(180deg, white 20%, white 70%);
+    background: linear-gradient(90deg, #3e8cff  15%, #FFF 15%);
 }
 
 .header {
@@ -42,12 +42,32 @@ body {
     border-color: #000;
 }
 
-.navi li {
+#navibar {
+    background-color: #FFF;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+}
+
+#navibar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+}
+
+#navibar li {
     display: inline-table;
     width: 160px;
 }
 
-.navi a {
+#navibar a {
     font-size: 20px;
     font-family: NexaLight;
     margin-top: 20px;
@@ -55,17 +75,17 @@ body {
     color: black;
 }
 
-.navi a:link, .navi a:visited {
-   color: black;
-   text-decoration: none;
+#navibar a:link, #navi a:visited {
+    color: black;
+    text-decoration: none;
 }
 
-.navi a:hover {
+#navibar a:hover {
     color: #3e8cff;
     text-decoration: underline;
 }
 
-.navi a:active {
+#navibar a:active {
     color: #17FFFF;
 }
 
@@ -74,8 +94,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
-    margin-bottom: auto;
+    margin-bottom: 35px;
     width: 50%;
+    min-height: 400px;
     text-wrap: normal;
     border-style: solid;
     border-width: 1px;
@@ -93,10 +114,24 @@ body {
     text-align: center;
 }
 
-.contentbox img {
+.contentbox img, .footer img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* for ie8 -- thanks stackoverflow! */
+    width: auto\9; /* for ie8 */
+}
+
+.auto-resize-iframe {
+    max-width: 560px;
+    height: 315px;
+    max-height: 315px;
+    margin: 0px auto;
+    padding-right: 22px;
+}
+
+.auto-resize-iframe iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .caption {
@@ -187,13 +222,27 @@ body {
     margin-top: 55px;
     text-align: center;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 2pt;
+    right: 5pt;
 }
 
 .footer p {
     margin: 0;
     padding: 0;
     font-family: NexaLight;
-    font-size: 12px;
+    font-size: 13px;
+}
+
+.footer a:link, .footer a:visited {
+    color: #FFF;
+    text-decoration: dashed;
+}
+
+.footer a:hover {
+    color: #D8FFFF;
+    text-decoration: underline;
+}
+
+.footer a:active {
+    color: #17FFFF;
 }
