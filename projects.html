@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="plugins/lightgallery/src/css/lightgallery.css">
+
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script type='text/javascript' src="plugins/lightgallery/src/js/lightgallery.js"></script>
     <script type="text/javascript" src="scripts/navscript.js"></script>
-    <script type="text/javascript" src="scripts/pfade.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+    <script src="plugins/lightgallery/src/js/lg-hash.js"></script>
+
     <!--<script type="text/javascript" src="scripts/processing.js"></script>-->
     <meta charset="UTF-8">
 
@@ -74,8 +80,7 @@
                             </li>
                          <br>
                              <li><strong>2D Puzzle Platformer</strong><br><br>
-                             <center><img src="projects/2dPlatformerScreenShot.jpg" width="480px"></center>
-                                 <br>
+                             <div class="container"><img src="projects/2dPlatformerScreenShot.jpg" width="560px"></div><br>
                                  Inspired by Super Meat Boy and Bloody Trapland, we wanted to create our own game that
                                  would be fun and challenging for our classmates to play. Aside from a few
                                  open source sound effects, everything else you see are our original creations.
@@ -99,7 +104,80 @@
 
                 <tr>
                     <td id = "ps">
-                        <center><p>Still under construction.</p></center>
+                        <div id="hash">
+                            <div class="item" data-src="projects/photography/LakeMerced.jpg"
+                                 data-sub-html="<h4>Lake Merced</h4><p>This was taken using a Canon Powershot A560.</p>"
+                                 style="display: inline-table; vertical-align: top;
+                                 padding:0; margin:0;">
+                                <a href="#"><img src="projects/photography/thumbnails/LakeMerced_thumb.jpg" width="610px"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/LandsEnd1.jpg"
+                                 data-sub-html="<h4>Land's End</h4><p>
+                                 This was taken using a Canon Rebel XTi.</p>" style="display: inline-table; vertical-align: top;
+                                 padding:0; margin:0;">
+                                <a href="#"><img src="projects/photography/thumbnails/LandsEnd1_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/LandsEnd2.jpg"
+                                 data-sub-html="<h4>Land's End</h4><p>This was taken using a Canon Rebel XTi.</p>"
+                                 style="display: inline-table; vertical-align: top;
+                                 padding:0; margin:0;">
+                                <a href="#"><img src="projects/photography/thumbnails/LandsEnd2_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/SunflowerPier39.jpg"
+                                 data-sub-html="<h4>Flower at Pier 39</h4><p>
+                                 This was taken using a Canon Powershot A560.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/SunflowerPier39_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/DowntownSJ.png"
+                                 data-sub-html="<h4>Autumn's Leaf</h4><p>
+                                 Stumbled upon a leaf in Downtown San Jose.<br>
+                                 This was taken using a Canon Powershot A560.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/DowntownSJ_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/ButterflySD.jpg"
+                                 data-sub-html="<h4>Butterfly</h4><p>
+                                 Found at the Butterfly Jungle in San Diego Zoo Safari Park.<br>
+                                 This was taken using a Canon Powershot A560.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/ButterflySD_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/Pier39.jpg"
+                                 data-sub-html="<h4>Docks at Pier 39</h4><p>
+                                 This was taken using a Canon Rebel XTi.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/Pier39_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/LickObservatory.jpg"
+                                 data-sub-html="<h4>Lick Observatory</h4>
+                                 <p>This was taken using a Canon Rebel XTi.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/LickObservatory_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/AlaineFlandez.jpg"
+                                 data-sub-html="<h4>Angelic Lights</h4><p>Model: Alaine Flandez<br>
+                                 This was taken using a film camera from my photography class back in high school.<br>
+                                 Film used: ASA 100/ B&W<br>
+                                 Original print scanned and edited using Adobe Photoshop CS3</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/AlaineFlandez_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/ElsonTotoro.jpg"
+                                 data-sub-html="<h4>San Francisco City Lights</h4><p>Elson Yung and Totoro.<br>
+                                 This was taken using a Canon Powershot A560.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/ElsonTotoro_thumb.jpg"></a>
+                            </div>
+                            <div class="item" data-src="projects/photography/ThuhaCastleRock.jpg"
+                                 data-sub-html="<h4>Castle Rock Hike</h4><p>Featuring Thuha Cao and
+                                 her walking stick Woody.<br>
+                                 This was taken using a Canon Rebel XTi.</p>"
+                                 style="display: inline-table; vertical-align: top">
+                                <a href="#"><img src="projects/photography/thumbnails/ThuhaCastleRock_thumb.jpg"></a>
+                            </div>
+
+                        </div>
                     </td>
                 </tr>
                 <tr>

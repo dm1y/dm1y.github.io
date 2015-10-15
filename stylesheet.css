@@ -114,6 +114,29 @@ body {
     padding: 0px;
 }
 
+
+.imgbox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 50%;
+    text-wrap: normal;
+    text-align: center;
+    padding: 0px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 75%;
+    text-wrap: normal;
+    text-align: center;
+    padding: 0px;
+}
+
 .contentbox p {
     font-family: NexaLight;
     font-style: inherit;
@@ -123,10 +146,12 @@ body {
     text-align: center;
 }
 
-.contentbox img, .footer img, .caption img {
+.contentbox img, .footer img, .caption img, .imgbox img, .container img {
     max-width: 100%;
     height: auto;
     width: auto\9; /* for ie8 */
+    margin: 0;
+    padding: 0;
 }
 
 .auto-resize-iframe {
@@ -164,7 +189,7 @@ body {
     text-align: center;
 }
 
-.caption p {
+.caption p, .box p {
     font-family: NexaLight;
     font-style: inherit;
     font-size: 16px;
@@ -231,7 +256,6 @@ body {
     display: block;
     text-align: left;
 }
-
 
 .footer {
     margin-top: 55px;
