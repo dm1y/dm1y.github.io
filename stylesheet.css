@@ -3,8 +3,8 @@
 
 
 body {
-    /*background: linear-gradient(90deg, #3e8cff  15%, #FFF 15%);*/
-    background-image: url('img/experimental.jpg'), -webkit-linear-gradient(left, #3e8cff  15%, #FFF 15%);
+    background: linear-gradient(90deg, #3e8cff  15%, #FFF 15%);
+    /*background-image: url('img/experimental.jpg'), -webkit-linear-gradient(left, #3e8cff  15%, #FFF 15%);*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: bottom 0px right -20px;
