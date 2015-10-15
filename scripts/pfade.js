@@ -25,7 +25,6 @@ $(document).ready(function() {
             else
                 $('#cs').show(1000);
         }
-
     });
 
     $('#photo').click(function () {
