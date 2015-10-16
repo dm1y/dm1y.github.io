@@ -104,7 +104,8 @@ body {
     margin-right: auto;
     margin-top: 35px;
     margin-bottom: 35px;
-    width: 50%;
+    width: 650px;
+    max-width: 50%;
     /*min-height: 400px;*/
     text-wrap: normal;
     border-style: solid;
